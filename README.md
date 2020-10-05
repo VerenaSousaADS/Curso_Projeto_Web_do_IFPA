@@ -1,4 +1,3 @@
-# ifpaProgWebPhpAlgoritmos
-Curso de Programação Web, matéria de algoritmos com php
+# Projeto Web IFPA
 
-##Estas são as atividades desenvolvidas na Unidade I da matéria de Introdução Web e Algoritmos com PHP.
+##Estas são as atividades desenvolvidas ao longo do curso de Projeto Web ministrado pela instituição de ensino Instituto Federal do Pará.
