@@ -1,0 +1,78 @@
+.borda1 {
+	width: 800px;
+	height: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	background: rgba(0,191,255,0.3);
+	border: solid;
+}
+
+.borda2 {
+	width: 800px;
+	height: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	background: rgba(60,179,113,0.3);
+	border: dotted;
+	margin-top: 10px;
+}
+
+.borda3 {
+	width: 800px;
+	height: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	background: rgba(0,191,255,0.3);
+	border: dashed;
+	margin-top: 10px;
+}
+
+.borda4 {
+	width: 800px;
+	height: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	background: rgba(60,179,113,0.3);
+	border: inset;
+	margin-top: 10px;
+}
+
+.borda5{
+	width: 800px;
+	height: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	background: rgba(0,191,255,0.3);
+	border: outset;
+	margin-top: 10px;
+}
+
+.borda6{
+	width: 800px;
+	height: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	background: rgba(60,179,113,0.3);
+	border: double;
+	margin-top: 10px;
+}
+
+.borda7{
+	width: 800px;
+	height: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	background: rgba(0,191,255,0.3);
+	border: groove;
+	margin-top: 10px;
+}
+
+.borda8{
+	width: 800px;
+	height: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	background: rgba(60,179,113,0.3);
+	border: none;
+	margin-top: 10px;
+}

@@ -1,0 +1,151 @@
+.topo{
+	background: rgba(0,255,0,0.7);
+	
+	height: 200px;
+	width: 100%;	
+
+	position: fixed;
+
+	top: 0;
+}
+
+.imgTop{
+	width: 50px;
+	height: 50px
+}
+
+
+
+.content{
+
+	flex: 60%;
+	box-sizing: border-box;
+	padding: 20px;
+
+	border: solid;
+	border-radius: 30px;
+
+	padding: 20px;
+
+	margin-top: 240px;
+	margin-bottom: 30px;
+	margin-left: 40px;
+	margin-right: 35px;
+
+
+	width: 700px;
+
+	font-size: 24px;
+	font-family: Arial;
+
+	text-align: justify;
+
+	background: rgb(50, 205, 50);
+}
+
+img{
+	width: 200px;
+	height: 200px;
+
+	border: solid;
+
+	padding: 8px;
+}
+
+.menu {
+
+	float: right;
+	font-weight: bold;
+	margin-top: 100px;
+	padding-right: 20px;
+
+}
+
+ul {
+
+	list-style-type: none;
+
+	text-decoration: none;
+	
+	/*padding-left: 10px;
+	padding-right: 10px;*/
+	text-align: center;
+	
+
+}
+
+
+
+li a {
+	display: inline;
+	text-decoration: none;
+	color: rgb(54,54,54);
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: right;
+}
+
+li a:hover {
+	background: rgba(28,28,28, 0.6);
+}
+
+#fundo {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0, 0.4);
+	display: none;
+}
+
+
+.aumentar_img {
+	animation-name: aumentar;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes aumentar {
+	from {transform: scale(0); margin-left: 30%; margin-top: 10%;}
+	to {transform: scale(1);margin-left: 30%; margin-top: 10%;}
+}
+
+.principal {
+	display: flex;
+	flex-wrap: wrap;
+
+
+}
+
+.lado {
+
+	flex: 20%;
+	box-sizing: border-box;
+
+	border: solid;
+	border-radius: 30px;
+
+	padding: 20px;
+
+	margin-top: 240px;
+	margin-bottom: 30px;
+	margin-left: 20px;
+	float: left;
+
+	width: 200px;
+
+	background: rgb(50, 205, 50);
+	
+	font-size: 18px;
+	font-family: Arial;
+}
+
+.rodape {
+	padding: 20px;
+	text-align: center;
+	background: rgba(50, 205, 50, 0.30);
+	font-size: 14px;
+	font-family: Arial;
+}
+

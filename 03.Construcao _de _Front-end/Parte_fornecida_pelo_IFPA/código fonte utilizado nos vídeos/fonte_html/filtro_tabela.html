@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exemplo de filtro na tabela</title>
+	<link rel="stylesheet" type="text/css" href="filtro_tabela.css">
+	<script type="text/javascript">
+		function pesquisar(tag) {
+			var filtro = tag.value.toUpperCase();
+			var tabela = document.getElementById("tabela");
+			var tr = tabela.getElementsByTagName("tr");
+
+			for(let linha of tr) {
+				var td = linha.getElementsByTagName("td")[0];
+				if(td) {
+					var conteudo = td.textContent;
+					if(conteudo.toUpperCase().startsWith(filtro)) {
+						linha.style.display = "";
+					} else {
+						linha.style.display = "none";
+					}
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<input id="pesquisa" type="search" name="pesquisar" placeholder="Pesquisar..." onkeyup="pesquisar(this)">
+	<table id="tabela">
+		<tr class="coluna">
+			<th>Nome</th>
+			<th>Sobrenome</th>
+		</tr>
+		<tr>
+			<td>José</td>
+			<td>Oliveira</td>
+		</tr>
+		<tr>
+			<td>Alberto</td>
+			<td>Sousa</td>
+		</tr>
+		<tr>
+			<td>Amanda</td>
+			<td>Farias</td>
+		</tr>
+		<tr>
+			<td>Carlos</td>
+			<td>Oliveira</td>
+		</tr>
+		<tr>
+			<td>Carol</td>
+			<td>Soares</td>
+		</tr>
+	</table>
+</body>
+</html>

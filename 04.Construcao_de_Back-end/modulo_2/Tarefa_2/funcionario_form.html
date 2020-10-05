@@ -1,0 +1,100 @@
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+<style>
+
+    .func {
+
+        font-family: 'PT Sans Caption', sans-serif;
+        text-align: left;
+        font-weight: lighter;
+        font-size:30px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 6em;
+       
+    } 
+
+    .itns{
+    
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 6em;
+        font-family: 'PT Sans Caption', sans-serif;
+        text-align: left;
+        font-weight: lighter;
+        font-size:24px;
+
+    }
+
+    .sv{
+        margin-left: 0;
+        margin-right: 0;
+        width: 6em;
+        font-family: 'PT Sans Caption', sans-serif;
+        text-align: left;
+        font-weight: lighter;
+        font-size:15px;  
+
+    }
+
+</style>
+
+
+<div class="itns">
+
+ 
+    <h1 class="func">INSERIR FUNCIONARIO</h1>
+
+    <form action="ins_funcionario.php" method="post" class="itns">
+
+
+        <table>
+
+            <tr>
+
+                <td>Nome: </td><td><input required placeholder="Ex.: Maria" type="text" name="campo_nome" id="cmpNm"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Sobrenome: </td><td><input required placeholder="Ex.: Sousa" type="text" name="campo_sobrenome" id="cmpSn"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Cargo: </td><td><input required placeholder="Ex.: vendedora" type="text" name="campo_cargo" id="cmpCg"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Email: </td><td><input required placeholder="Ex.: maria@email.com" type="text" name="campo_email" id="cmpEml"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Login: </td><td><input required placeholder="Ex.: m@ar1a" type="text" name="campo_login" id="cmpLg"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Senha: </td><td><input required placeholder="Ex.: 12356" type="text" name="campo_senha" id="cmpSnh"></td>
+
+            </tr>
+
+            <tr>
+
+                <td><input type="submit" value="SALVAR" class="sv"></td><td></td>
+
+            </tr>
+
+        </table>
+
+    </form>
+
+</div>

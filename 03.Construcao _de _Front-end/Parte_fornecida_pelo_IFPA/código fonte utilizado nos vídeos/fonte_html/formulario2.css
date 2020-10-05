@@ -1,0 +1,31 @@
+label {
+	font-size: 18pt;
+}
+
+input {
+	margin-bottom: 12px;
+}
+
+input[type=submit] {
+	font-size: 18pt;
+	font-weight: bold;
+	width: 200px;
+	padding: 8px;
+	background: rgb(0,255,127);
+}
+
+input[type=submit]:hover {
+	background: rgb(0,100,0);
+}
+
+.next {
+	float: right;
+}
+
+
+#proxima {
+	text-decoration: none;
+	font-size: 22pt;
+	font-weight: bold;
+	color: rgb(0,191,255);
+}

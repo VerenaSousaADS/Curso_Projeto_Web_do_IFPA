@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exemplo zoom 2</title>
+	<style type="text/css">
+		.fundo {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background: rgba(0,0,0, 0.4);
+			display: none;
+		}
+
+		.fechar {
+			float: right;
+			color: red;
+			font-size: 50px;
+			font-weight: bold;
+		}
+
+		.fechar:hover {
+			color: black;
+			cursor: pointer;
+		}
+
+		.aumentar_img {
+			animation-name: aumentar;
+			animation-duration: 3s;
+			animation-fill-mode: forwards;
+		}
+
+		@keyframes aumentar {
+			from {transform: scale(0); margin-left: 30%; margin-top: 10%;}
+			to {transform: scale(1);margin-left: 30%; margin-top: 10%;}
+		}
+	</style>
+	<script type="text/javascript">
+		function fechar() {
+			var fundo = document.getElementById("fundo");
+			fundo.style.display = "none";
+		}
+
+		function exibir(tag) {
+			var img = document.getElementById("foto");
+			var fundo = document.getElementById("fundo");
+			fundo.style.display = "block";
+			img.src = tag.src;
+			img.classList.add("aumentar_img");
+		}
+	</script>
+</head>
+<body>
+	<img src="boat.png" height="100" width="100" onclick="exibir(this)">
+	<img src="car.png" height="100" width="100" onclick="exibir(this)">
+	<img src="plane.png" height="100" width="100" onclick="exibir(this)">
+	<div id="fundo" class="fundo">
+		<span class="fechar" onclick="fechar()">X</span>
+		<img id="foto">
+	</div>
+</body>
+</html>

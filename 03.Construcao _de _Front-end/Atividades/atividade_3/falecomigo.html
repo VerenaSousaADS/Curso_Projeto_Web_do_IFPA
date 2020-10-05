@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="falecomigo.css">
+	<link rel="stylesheet" type="text/css" href="meuestilo.css">
+	<title>Fale Comigo</title>
+</head>
+<body>
+
+	<div class="topo">
+		<img src="joystick.png" class="imgTop">
+
+	<div class="formulario">
+		<form>
+		<div class="grid">			
+			<label>Nome</label>
+			<input type="text" name="cp_nome" placeholder="seu nome..." required onblur="caixa_alta(this)">
+
+			<label>E-mail</label>
+			<input type="email" name="cp_email" placeholder="seu e-mail..."
+			required onblur="caixa_alta(this)">
+
+
+			<label>Comentário</label>
+			<textarea placeholder="seu comentário..." required
+			onblur="caixa_alta(this)"></textarea>
+		</div>
+		<input type="submit" name="bt_enviar" value="Enviar">
+		<input type="reset" name="bt_limpar" value="Limpar">
+		</form>		
+		</div>
+	</div>
+
+</body>
+</html>

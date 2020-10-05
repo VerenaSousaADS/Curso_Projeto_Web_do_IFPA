@@ -1,0 +1,90 @@
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+<style>
+
+    .func {
+
+        font-family: 'PT Sans Caption', sans-serif;
+        text-align: left;
+        font-weight: lighter;
+        font-size:30px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 6em;
+       
+    } 
+
+    .itns{
+    
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 6em;
+        font-family: 'PT Sans Caption', sans-serif;
+        text-align: left;
+        font-weight: lighter;
+        font-size:24px;
+
+    }
+
+    .sv{
+        margin-left: 0;
+        margin-right: 0;
+        width: 6em;
+        font-family: 'PT Sans Caption', sans-serif;
+        text-align: left;
+        font-weight: lighter;
+        font-size:15px;  
+
+    }
+
+</style>
+
+<div class="itns">
+
+    <h1 class="func">INSERIR ANIMAL</h1>
+
+    <form action="ins_animal.php" method="POST" class="itns">
+
+        <table>
+
+            <tr>
+                <td>Especie:</td><td><input required placeholder="Ex.: gato" type="text" name="campo_especie" id="cmpEpc"></td>
+
+            </tr>
+            <tr>
+
+                <td>Sexo: </td><td><input required placeholder="Ex.: m" type="text" name="campo_sexo" id="cmpSx"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Data de nascimento: </td><td><input required placeholder="Ex.: yyyy-mm-dd" type="text" name="campo_nascimento" id="cmpNsc"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Descrição: </td><td><input required placeholder="Ex.: branco" type="text" name="campo_descricao" id="cmpDsc"></td>
+            
+            </tr>
+
+            <tr>
+
+                <td>Preço: </td><td><input required placeholder="Ex.: 300.00" type="text" name="campo_preco" id="cmpPrc"></td>
+
+            </tr>
+
+            <tr>
+
+                <td><input type="submit" value="SALVAR" class="sv"></td>
+
+            </tr>
+
+
+        </table>
+
+    </form>
+
+</div>

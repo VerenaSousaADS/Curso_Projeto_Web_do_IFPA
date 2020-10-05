@@ -1,0 +1,76 @@
+body {
+	font-family: Arial;
+	margin: 0;
+}
+
+.topo {
+	color: white;
+	text-align: center;
+	background: rgb(26, 139, 188);
+	padding: 80px;
+}
+
+.menu {
+	background: rgb(51, 51, 51);
+	overflow: hidden;
+	top: 0;
+	position: sticky;
+}
+
+.menu a {
+	color: white;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+	float: left;
+}
+
+.menu a:hover {
+	color: black;
+	background: rgb(242, 242, 242);
+}
+
+.menu_principal {
+	background: rgb(121, 121, 121);
+}
+
+.pesquisa {
+	float: right;
+	padding: 12px;
+	margin-right: 12px;
+	margin-top: 2px;
+	border: 1px solid rgb(242, 242, 242);
+	border-radius: 5px;
+}
+
+.principal {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.lado {
+	flex: 30%;
+	box-sizing: border-box;
+	background: rgb(221, 221, 221);
+	padding: 20px;
+}
+
+.centro {
+	flex: 70%;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+.conteudo {
+	background: rgb(121, 121, 121);
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.rodape {
+	padding: 20px;
+	text-align: center;
+	background: rgb(242, 242, 242);
+}
+

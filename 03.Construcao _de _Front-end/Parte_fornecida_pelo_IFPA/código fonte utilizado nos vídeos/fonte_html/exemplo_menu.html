@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exemplo menu</title>
+	<link rel="stylesheet" type="text/css" href="menu.css">
+	<script type="text/javascript">
+		function abrir() {
+			var menu = document.getElementById("menu");
+			menu.style.width = "260px";
+		}
+
+		function fechar() {
+			var menu = document.getElementById("menu");
+			menu.style.width = "0px";	
+		}
+	</script>
+</head>
+<body>
+	<div id="menu" class="menu">
+		<a href="#" class="fechar" onclick="fechar()">&times</a>
+		<a href="#">Opção 1</a>
+		<a href="#">Opção 2</a>
+		<a href="#">Opção 3</a>
+		<a href="#">Opção 4</a>
+	</div>
+	<span onclick="abrir()">&#9776 Menu</span>
+	<div class="conteudo"></div>
+</body>
+</html>

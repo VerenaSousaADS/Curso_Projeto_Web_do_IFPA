@@ -1,0 +1,38 @@
+#tabela {
+	width: 100%;
+	font-size: 18px;
+	border: 1px solid rgb(121, 121, 121);
+	border-collapse: collapse;
+}
+
+.coluna {
+	background: rgb(241, 241, 241);
+}
+
+th, td {
+	text-align: left;
+	padding: 12px;
+}
+
+tr{
+	border-bottom: 1px solid rgb(241, 241, 241);
+}
+
+tr:hover {
+	background: rgb(241, 241, 241);
+}
+
+#pesquisa {
+	width: 15%;
+	font-size: 16px;
+	padding: 12px 20px 12px 40px;
+	border: 1px solid rgb(221, 221, 221);
+	margin-bottom: 12px;
+	margin-top: 50px;
+	transition: 1s;
+}
+
+#pesquisa:focus {
+	width: 100%;
+}
+

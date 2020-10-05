@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exemplo onchange</title>
+
+	<script type="text/javascript">
+		function exibir_imagem(tag) {
+			var nome = tag.value;
+			var img = document.getElementById("foto");
+			img.src = nome;	
+
+			img.classList.remove("efeito_imagem");
+			img.offsetWidth;
+			img.classList.add("efeito_imagem");
+		}
+	</script>
+	<style type="text/css">
+		.grid {
+			display: grid;
+			grid-template-columns: 50% 50%;
+			width: 800px;
+			height: 300px;
+			margin-right: auto;
+			margin-left: auto;
+			margin-top: 100px;
+			border: solid;
+			border-radius: 5px;
+			padding: 20px;
+		}
+
+		select {
+			width: 50%;
+			height: 45px;
+			padding: 12px;
+			border: 1px solid rgb(204, 204, 204);
+			border-radius: 4px;
+		}
+
+		.efeito_imagem {
+			width: 50%;
+			height: 200px;
+			position: relative;
+			animation-name: movimento;
+			animation-duration: 3s;
+			animation-fill-mode: forwards;
+		}
+
+		@keyframes movimento {
+			from {
+				
+				height: 0px;
+				opacity: 0;
+			}
+			to {
+				
+				height: 200px;
+				opacity: 1;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="grid">
+		<select onchange="exibir_imagem(this)">
+			<option selected disabled hidden>escolha uma opção</option>
+			<option value="boat.png">Barco</option>
+			<option value="car.png">Carro</option>
+			<option value="plane.png">Avião</option>
+		</select>
+			<img id="foto" height="200" width="200">
+	</div>
+</body>
+</html>

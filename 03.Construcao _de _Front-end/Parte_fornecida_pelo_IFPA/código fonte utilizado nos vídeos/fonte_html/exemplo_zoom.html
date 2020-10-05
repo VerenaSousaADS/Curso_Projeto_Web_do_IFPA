@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exemplo zoom</title>
+	<style type="text/css">
+
+		.aumentar_img {		
+
+			animation-name: aumentar;
+			animation-duration: 3s;
+			animation-fill-mode: forwards;
+		}
+
+		.diminuir_img {		
+
+			animation-name: diminuir;
+			animation-duration: 3s;
+			animation-fill-mode: forwards;
+		}
+
+
+		@keyframes aumentar {
+			
+			from{width: 200px; height: 200px}
+			 to{width: 500px; height: 500px}
+		}
+
+		@keyframes diminuir {
+			
+			from{width: 500px; height: 500px}
+			 to{width: 200px; height: 200px}
+		}
+		
+
+	</style>
+
+	<script type="text/javascript">
+		function zoom(tag) {
+
+			if(tag.classList == "aumentar_img") {
+
+				tag.classList.remove("aumentar_img");
+				tag.classList.add("diminuir_img");
+
+			} else {
+
+				tag.classList.remove("diminuir_img");
+				tag.classList.add("aumentar_img");
+
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<img src="boat.png" height="200" width="200" onclick="zoom(this)">
+	<img src="car.png" height="200" width="200" onclick="zoom(this)">
+	<img src="plane.png" height="200" width="200" onclick="zoom(this)">
+</body>
+</html>

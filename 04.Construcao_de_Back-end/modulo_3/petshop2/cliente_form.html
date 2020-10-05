@@ -1,0 +1,95 @@
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+<style>
+
+    .func {
+
+        font-family: 'PT Sans Caption', sans-serif;
+        text-align: left;
+        font-weight: lighter;
+        font-size:30px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 6em;
+       
+    } 
+
+    .itns{
+    
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 6em;
+        font-family: 'PT Sans Caption', sans-serif;
+        text-align: left;
+        font-weight: lighter;
+        font-size:24px;
+
+    }
+
+    .sv{
+        margin-left: 0;
+        margin-right: 0;
+        width: 6em;
+        font-family: 'PT Sans Caption', sans-serif;
+        text-align: left;
+        font-weight: lighter;
+        font-size:15px;  
+        background-color:rgba(255,190,190);
+        border-radius: 7px 7px 7px 7px;
+        color:rgb(90,48,141);
+    }
+
+</style>
+
+<div class="itns">
+
+    <h1 class="func">INSERIR CLIENTE</h1>
+ 
+    <form id="formCliente" method="post" class="itns">
+
+        <table>
+
+            <tr>
+
+                <td>Nome: </td><td><input required placeholder="Ex.: Maria" type="text" name="campo_nome" id="cmpNm"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Sobrenome: </td><td><input required placeholder="Ex.: Sousa" type="text" name="campo_sobrenome" id="cmpSn"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>CPF: </td><td><input required placeholder="Ex.: 000.000.000-00" type="text" name="campo_cpf" id="cmpCpf"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Endereço: </td><td><input required placeholder="Ex.: rua h" type="text" name="campo_endereco" id="cmpEnd"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Telefone: </td><td><input required placeholder="Ex.: (00) 00000-0000" type="text" name="campo_telefone" id="cmpTlf"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Email: </td><td><input required placeholder="Ex.: maria@email.com" type="text" name="campo_email" id="cmpEml"></td>
+
+            </tr>
+
+        </table>
+
+        <input type="submit" value="Salvar" class="sv">
+    
+    </form>
+
+</div>
