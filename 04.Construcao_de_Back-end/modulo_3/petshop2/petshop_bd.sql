@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 30-Set-2020 às 18:28
+-- Tempo de geração: 19-Out-2020 às 03:37
 -- Versão do servidor: 10.4.14-MariaDB
 -- versão do PHP: 7.4.10
 
@@ -87,7 +87,7 @@ CREATE TABLE `funcionarios` (
 --
 
 INSERT INTO `funcionarios` (`id_funcionario`, `nome`, `sobrenome`, `cargo`, `email`, `login`, `senha`) VALUES
-(1, 'Rogério', 'Marques', 'vendedor', 'rogerio@email.com', 'rog3rio', '123456');
+(1, '', '', '', '', 'admin', 'admin');
 
 -- --------------------------------------------------------
 
