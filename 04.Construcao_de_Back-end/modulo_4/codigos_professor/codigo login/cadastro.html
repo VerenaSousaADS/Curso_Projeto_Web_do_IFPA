@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+    <style>
+        #geral{
+            width: 30vw;
+            height:34vh;
+            margin: 0 auto;
+            margin-top: 20vh;
+            background-color: aqua;
+            border-radius: 5px;
+        }
+        body{
+            background-color: gray;
+        }
+    </style>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div id="geral">
+        <form id="form_cadastro" action="#" method="post">
+            <table>
+                <tr>
+                    <td>Nome</td><td><input type="text" id="campo_nome" name="campo_nome"></td>
+                </tr>
+                <tr>
+                    <td>CPF</td><td><input type="text" id="campo_cpf" name="campo_cpf"></td>
+                </tr>
+                <tr>
+                    <td>Login</td><td><input type="text" id="campo_login" name="campo_login"></td>
+                </tr>
+                <tr>
+                    <td>Senha</td><td><input type="text" id="campo_senha" name="campo_senha"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="CADASTRAR"></td><td></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
+
